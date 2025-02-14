@@ -1,13 +1,15 @@
 import Image from "next/image";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import DotPattern from "@/components/ui/dot-pattern-1";
+import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import PyconLogo from "@/public/pycon.svg";
 import Footer from "@/components/ui/footer";
 
 export default function Home() {
   const bottomLinks = [
     { url: "#", text: "About Us" },
-    { url: "#", text: "Code of Conduct" },
+    { url: "/code-of-conduct", text: "Code of Conduct" },
     { url: "https://2024.pycon.my", text: "PyCon MY 2024" },
   ];
 
@@ -33,16 +35,30 @@ export default function Home() {
                 <div className="flex items-center gap-1 md:gap-2 lg:gap-3 xl:gap-4">
                   <p className="font-thin">for</p>
                   <Image className="h-8 w-8 md:h-16 md:w-16 lg:h-24 lg:w-24 mx-1 md:mx-2" src={PyconLogo} alt={''} />
-                  <h1 className="font-semibold">PyCon MY 2025.</h1>
+                  <h1 className="font-semibold text-red-500">PyCon MY 2025</h1>
+                  <h1 className="font-thin -ml-2">.</h1>
                 </div>
                 <div className="flex gap-1 md:gap-2 lg:gap-3 xl:gap-4">
                   <p className="font-thin">It&apos;s going to be</p>
                   <h1 className="font-semibold">lit</h1>
                   <p className="font-thin">and</p>
                 </div>
-                <h1 className="font-semibold">wow!&quot;</h1>
+                <div className="flex gap-1 md:gap-2 lg:gap-3 xl:gap-4">
+                  <h1 className="font-semibold">wow!</h1>
+                  <h1 className="font-thin -ml-2">&quot;</h1>
+                </div>
               </div>
-              <div className="mt-16 flex items-center space-x-4 text-lg text-gray-700">
+              <div
+                className="mt-8 group inline-block rounded-full border border-black/5 bg-green-200 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+              >
+                <a href="https://forms.gle/KyLbYkuEYRzLBKio9" target="_blank" rel="noopener noreferrer" aria-label="Volunteer with us">
+                  <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                    <span>✨ Volunteer with us!</span>
+                    <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                  </AnimatedShinyText>
+                </a>
+              </div>
+              <div className="mt-8 flex items-center space-x-4 text-lg text-gray-700">
                 <span>Follow us at</span>
                 <a href="https://www.facebook.com/PyConMYofficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <svg className="h-6 w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" /></svg>

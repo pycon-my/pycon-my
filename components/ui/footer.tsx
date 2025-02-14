@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface BottomLink {
   url: string;
@@ -17,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ copyright, bottomLinks }) => {
       <ul className="flex gap-4">
         {bottomLinks.map((link, linkIdx) => (
           <li key={linkIdx} className="underline hover:text-primary">
-            <a href={link.url}>{link.text}</a>
+            <Link href={link.url}>{link.text}</Link>
           </li>
         ))}
       </ul>
