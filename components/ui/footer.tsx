@@ -12,7 +12,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ copyright, bottomLinks }) => {
   return (
-    <footer className="z-20 mt-24 flex flex-col justify-between gap-4 border-t pt-4 pb-8 px-12 text-sm font-medium text-muted-foreground md:flex-row md:items-center">
+    <footer className="z-20 flex flex-col justify-between gap-4 border-t pt-4 pb-8 px-12 text-sm font-medium text-muted-foreground md:flex-row md:items-center">
       <p>{copyright}</p>
       <ul className="flex gap-4">
         {bottomLinks.map((link, linkIdx) => (
