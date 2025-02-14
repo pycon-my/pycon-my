@@ -24,7 +24,7 @@ export default function Home() {
               </div>
               <div className="text-2xl tracking-tighter md:text-5xl lg:text-7xl xl:text-8xl">
                 <div className="flex gap-1 md:gap-2 lg:gap-3 xl:gap-4">
-                  <h1 className="font-thin">"Get ready this</h1>
+                  <h1 className="font-thin">&quot;Get ready this</h1>
                   <p className="font-semibold">September</p>
                 </div>
                 <div className="flex gap-1 md:gap-2 lg:gap-3 xl:gap-4">
@@ -32,11 +32,11 @@ export default function Home() {
                   <h1 className="font-semibold">PyCon MY 2025.</h1>
                 </div>
                 <div className="flex gap-1 md:gap-2 lg:gap-3 xl:gap-4">
-                  <p className="font-thin">It's going to be</p>
+                  <p className="font-thin">It&apos;s going to be</p>
                   <h1 className="font-semibold">lit</h1>
                   <p className="font-thin">and</p>
                 </div>
-                <h1 className="font-semibold">wow!"</h1>
+                <h1 className="font-semibold">wow!&quot;</h1>
               </div>
             </div>
           </div>
