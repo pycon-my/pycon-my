@@ -4,7 +4,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import DotPattern from "@/components/ui/dot-pattern-1";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import PyconLogo from "@/public/pycon.svg";
-import Footer from "@/components/ui/footer";
+import FooterLink from "@/components/footer-link";
 
 export default function Home() {
   const bottomLinks = [
@@ -74,10 +74,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer
-        copyright="© 2025 PyCon Malaysia. All rights reserved."
-        bottomLinks={bottomLinks}
-      />
+      <FooterLink />
     </div>
   );
 }
