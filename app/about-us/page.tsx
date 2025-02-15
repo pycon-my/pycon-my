@@ -7,7 +7,7 @@ const cardHeaderContent = {
 
 const aboutContent = {
     markdownDescription: true,
-    description: `Since it's first inception in 1991, the usage of the Python programming \
+    description: `Since its first inception in 1991, the usage of the Python programming \
 language has increased explosively in the past years. Python is now being \
 used in multitude industries, from the web, to film production in \
 Industrial Light and Magic and even for NASA.
@@ -44,11 +44,11 @@ follow:
 - Organizing and hosting a yearly PyCon MY
 - Organizing and hosting PyCon APAC in replace of the yearly PyCon MY when deemed appropriate and able
 - Support and/or organize python related events and workshop within Malaysia and Asia Pacific
-- Work together with other communities in a particolar python and in general Open Source Software (OSS)
+- Work together with other communities in a particular python and in general Open Source Software (OSS)
 - Work together with other related groups within Malaysia and the rest of the world to further expand the usage and increase users of OSS.
 
 From 2016, PyCon MY and PyCon APAC will be organized and managed by PYCON MY \
-PLT, with PYCON MY PLT will be the beneficiary of any sponsorship. We will \
+PLT, with PYCON MY PLT be the beneficiary of any sponsorship. We will \
 also try to work with other python or open source communities to organize events \
 beneficial to the community as a whole.`
 }

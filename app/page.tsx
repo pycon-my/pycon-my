@@ -7,11 +7,6 @@ import PyconLogo from "@/public/pycon.svg";
 import FooterLink from "@/components/footer-link";
 
 export default function Home() {
-  const bottomLinks = [
-    { url: "#", text: "About Us" },
-    { url: "/code-of-conduct", text: "Code of Conduct" },
-    { url: "https://2024.pycon.my", text: "PyCon MY 2024" },
-  ];
 
   return (
     <div className="relative min-h-screen flex flex-col">
